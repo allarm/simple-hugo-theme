@@ -5,9 +5,9 @@
     <div class="footer-links">
         {{- range .Site.Menus.footer -}}
         {{ if eq (hasPrefix .URL "mailto:") true }}
-        <a href="{{ .URL }}">{{- .Name -}}</a>
+        <a href="{{ .URL }}" class="footer">{{- .Name -}}</a>
         {{ else }}
-        <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
+        <a href="{{ .URL | relLangURL }}" class="footer">{{- .Name -}}</a>
         {{- end -}}
         {{ end }}
     </div>

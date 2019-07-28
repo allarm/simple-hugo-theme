@@ -1,12 +1,33 @@
+::-moz-selection {
+	color: #000;
+	background: #c2ff34; }
+
+::selection {
+	color: #000;
+	background: #c2ff34; }
+
+html {
+	font-size: 16px; }
+
 body {
 	font-family: 'Open Sans';
-    margin: 40px auto;
+	/* font-family: "adobe-text-pro", serif; */
+    margin: 0 auto;
     max-width: 650px;
     line-height: 1.6;
     font-size: 18px;
-    color: #444;
-    padding: 0 10px;
+	color: #111;
+	background-color: #fefefe;
+	-webkit-transition: all 1000ms cubic-bezier(0.76, 0, 1, 1);
+	transition: all 1000ms cubic-bezier(0.76, 0, 1, 1);
+    /* padding: 0 10px; */
 }
+
+p {
+	font-size: 1.3rem;
+	line-height: 2.2rem;
+	text-indent: 2.2rem;
+	margin: 0; }
 
 h1,
 h2,
@@ -59,46 +80,37 @@ img {
     margin-right: auto;
 }
 
-/* unvisited link */
-a:link {
-	color: red;
-	background: white;
-}
+a {
+	text-decoration: none;
+	color: #111;
+	padding-bottom: 2px;
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #111 0%, #111 4%, rgba(0, 0, 0, 0) 4%);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #111 0%, #111 4%, rgba(0, 0, 0, 0) 4%);
+	-webkit-transition: all 250ms cubic-bezier(0.76, 0, 1, 1);
+	transition: all 200ms cubic-bezier(0.76, 0, 1, 1); }
 
-/* visited link */
-a:visited {
-	color: green;
+a {
+	padding-bottom: 2px;
+	padding-top: 2px;
+	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, #ffea34 0%, #ffea34 24%, rgba(0, 0, 0, 0) 24%);
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #ffea34 0%, #ffea34 24%, rgba(0, 0, 0, 0) 24%);
 }
-
-/* mouse over link */
 a:hover {
-	color: white;
-	background: red;
-}
+    background-color: #ffea34;
+    color: #111; }
 
-/* selected link */
-a:active {
-	color: green;
-}
 
 a.tags {
-	text-decoration: none;
-}
-
-a.tags:link {
-	color red;
-	background: white;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	background-image: none;
 }
 
 a.tags:hover {
-	color: white;
-	background: red;
-}
-
-a.tags:visited {
-	color: green;
-}
-
+    background-color: #7134ff;
+    color: #fefefe; }
 a.tags::before {
 	content: "#";
 	font-weight: bold;
@@ -108,16 +120,15 @@ a.menu {
 	text-decoration: none;
 }
 
-a.menu:link {
-	color: red;
-	background: white;
-}
-
-a.menu::first-letter {
-	font-weight: 800;
-	font-size: 20px;
-}
-
 a.title {
-	text-decoration: none;
+	background-image: none;
+	font-weight: bold;
+}
+
+a.footer {
+	background-image: none;
+}
+
+time {
+	/* color: #adabaa; */
 }
