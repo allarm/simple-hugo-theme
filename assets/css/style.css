@@ -15,6 +15,10 @@ h3 {
 	line-height: 1.2
 }
 
+h1::before {
+	content: '#'
+}
+
 div.header h1 {
     padding-top: 0;
     padding-bottom: 8px;
@@ -23,6 +27,7 @@ div.header h1 {
     font-weight: 400;
     border-bottom: 1px solid;
 }
+
 
 .header-menu {
     float: right;
@@ -54,4 +59,49 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* unvisited link */
+a:link {
+	color: red;
+	background: white;
+}
+
+/* visited link */
+a:visited {
+	color: green;
+}
+
+/* mouse over link */
+a:hover {
+	color: white;
+	background: red;
+}
+
+/* selected link */
+a:active {
+	color: green;
+}
+
+a.tags {
+	text-decoration: none;
+}
+
+a.tags:link {
+	color red;
+	background: white;
+}
+
+a.tags:hover {
+	color: white;
+	background: red;
+}
+
+a.tags:visited {
+	color: green;
+}
+
+a.tags::before {
+	content: "#";
+	font-weight: bold;
 }
