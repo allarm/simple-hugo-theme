@@ -31,7 +31,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-family: 'Fira Code';
 	line-height: 1.2
 }
@@ -61,6 +62,11 @@ h2:before {
 
 h3:before {
 	content: "### ";
+	color: #f0f0f0;
+}
+
+h4:before {
+	content: "#### ";
 	color: #f0f0f0;
 }
 
@@ -124,6 +130,7 @@ a.tags {
 	padding-left: 1px;
 	padding-right: 1px;
 	background-image: none;
+	font-size: smaller;	
 }
 
 a.tags:hover {
@@ -149,25 +156,12 @@ a.footer {
 }
 
 time {
-	/* color: #adabaa; */
+	font-size: smaller;
 }
-
-sup {
-	line-height: 0.5;
-	font-size: 10px;
-	margin-right: 6px;
-	margin-left: 2px;
-	font-family: "brandon-grotesque", sans-serif; }
-sup a {
-	color: #111;
-	padding-bottom: 2px;
-	background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 18%, #111 24%, #111 24%, rgba(0, 0, 0, 0) 24%);
-	background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 18%, #111 24%, #111 24%, rgba(0, 0, 0, 0) 24%); }
-
 
 blockquote {
 	background: #f9f9f9;
-	border-left: 10px solid #ccc;
+	border-left: 0.5em solid #ccc;
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
 	quotes: "\201C""\201D""\2018""\2019";
@@ -186,10 +180,75 @@ blockquote p {
 
 blockquote span {
 	display: block;
-	color: #333333;
+	color: #111;
 	font-style: normal;
 	font-weight: bold;
 	margin-top: 1em;
 	/* margin: 1.5em 10px; */
 	padding: 0.5em 10px;
+}
+
+article {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sidenote_r {
+	float: right;
+	clear: right;
+	width: 40%;
+	margin-right: -50%;
+	padding: 0.5em 10px;
+	position: relative;
+	transform: translateY(-30%);
+	border-left: 0.5em solid #afff34;
+	background: #fcfff8;
+	text-indent: 0;
+}
+
+.sidenote_l {
+	float: left;
+	clear: right;
+	width: 40%;
+	margin-left: -50%;
+	padding: 0.5em 10px;
+	position: relative;
+	transform: translateY(-30%);
+	border-right: 0.5em solid #afff34;
+	background: #fcfff8;
+	text-indent:0;
+}
+
+.sidenote_emph_r {
+	float: right;
+	clear: right;
+	width: 40%;
+	margin-right: -50%;
+	padding: 0.5em 10px;
+	position: relative;
+	transform: translateY(-30%);
+	border-left: 0.5em solid #ff8534;
+	background: #fffbf8;
+	text-indent: 0;
+}
+
+.sidenote_emph_l {
+	float: left;
+	clear: right;
+	width: 40%;
+	margin-left: -50%;
+	padding: 0.5em 10px;
+	position: relative;
+	transform: translateY(-30%);
+	border-right: 0.5em solid #ff8534;
+	background: #fffbf8;
+	text-indent:0;
+}
+
+code {
+	background: #afff34;
+	font-size: 85%;
+	border-radius: 3px;
+	padding: .2em .4em;
 }
