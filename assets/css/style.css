@@ -247,8 +247,34 @@ article {
 }
 
 code {
-	background: #afff34;
+	background: #f8f9ff;
 	font-size: 85%;
 	border-radius: 3px;
 	padding: .2em .4em;
+}
+
+pre code {
+	background: #fefefe;
+	display: block;
+	/* border-left: 0.5em solid #e5e7ff; */
+}
+
+div.highlight {
+	border-left: 0.5em solid #e5e7ff;
+}
+
+dl {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	border-right: 0.5em solid #ffea34;
 }
