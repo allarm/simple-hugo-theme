@@ -15,10 +15,6 @@ h3 {
 	line-height: 1.2
 }
 
-h1::before {
-	content: '#'
-}
-
 div.header h1 {
     padding-top: 0;
     padding-bottom: 8px;
@@ -47,10 +43,12 @@ ul.pagination > li {
 div.footer {
     border-top: 1px solid;
     text-align: center;
+	font-size: 80%;
 }
 
 div.copyright {
 	color: grey;
+	font-size: 80%;
 }
 
 img {
@@ -104,4 +102,22 @@ a.tags:visited {
 a.tags::before {
 	content: "#";
 	font-weight: bold;
+}
+
+a.menu {
+	text-decoration: none;
+}
+
+a.menu:link {
+	color: red;
+	background: white;
+}
+
+a.menu::first-letter {
+	font-weight: 800;
+	font-size: 20px;
+}
+
+a.title {
+	text-decoration: none;
 }

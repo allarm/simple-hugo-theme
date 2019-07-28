@@ -1,13 +1,13 @@
 {{ block "header" . }}
 <div class="header">
     <h1>
-        <a href="{{ .Site.BaseURL | relLangURL }}">{{- .Site.Title -}}</a>
+        <a href="{{ .Site.BaseURL | relLangURL }}" class="title">{{- .Site.Title -}}</a>
         <div class="header-menu">
             {{- range .Site.Menus.main -}}
             {{ if eq (hasPrefix .URL "mailto:") true }}
-            <a href="{{ .URL }}">{{- .Name -}}</a>
+            <a href="{{ .URL }}" class="menu">{{- .Name -}}</a>
             {{ else }}
-            <a href="{{ .URL | relLangURL }}">{{- .Name -}}</a>
+            <a href="{{ .URL | relLangURL }}" class="menu">{{- .Name -}}</a>
             {{- end -}}
             {{ end }}
         </div>
