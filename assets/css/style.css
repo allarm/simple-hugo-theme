@@ -260,7 +260,7 @@ pre code {
 }
 
 div.highlight {
-	border-left: 0.5em solid #e5e7ff;
+	/* border-left: 0.5em solid #e5e7ff; */
 }
 
 dl {
