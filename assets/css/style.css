@@ -1,4 +1,5 @@
 body {
+	font-family: 'Open Sans';
     margin: 40px auto;
     max-width: 650px;
     line-height: 1.6;
@@ -10,7 +11,8 @@ body {
 h1,
 h2,
 h3 {
-    line-height: 1.2
+	font-family: 'Fira Code';
+	line-height: 1.2
 }
 
 div.header h1 {
@@ -40,6 +42,10 @@ ul.pagination > li {
 div.footer {
     border-top: 1px solid;
     text-align: center;
+}
+
+div.copyright {
+	color: grey;
 }
 
 img {
