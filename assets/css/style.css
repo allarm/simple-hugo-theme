@@ -315,66 +315,64 @@ blockquote span {
 	padding: 0.5em 10px;
 }
 
-article {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
+/* article { */
+/* 	width: 100%; */
+/* 	margin-left: auto; */
+/* 	margin-right: auto; */
+/* } */
+
+/* Sidenotes */
+
+/* Hiding on mobile (redesign) */
+@media (max-width: 43.75em) {
+	.sidenote_r,
+	.sidenote_l,
+	.sidenote_emph_r,
+	.sidenote_emph_l {
+		display: none;	
+	}
 }
 
-.sidenote_r {
-	float: right;
-	clear: right;
+.sidenote_r,
+.sidenote_l,
+.sidenote_emph_r,
+.sidenote_emph_l {
 	width: 40%;
 	margin-right: -60%;
 	padding: 0.5em 10px;
 	position: relative;
 	transform: translateY(-30%);
-	border-left: 0.5em solid #afff34;
-	background: #fcfff8;
 	text-indent: 0;
 	font-size: 85%;
 	line-height: 1.8rem;
+}
+
+.sidenote_r {
+	float: right;
+	clear: right;
+	border-left: 0.5em solid #afff34;
+	background: #fcfff8;
 }
 
 .sidenote_l {
 	float: left;
 	clear: right;
-	width: 40%;
-	margin-left: -60%;
-	padding: 0.5em 10px;
-	position: relative;
-	transform: translateY(-30%);
 	border-right: 0.5em solid #afff34;
 	background: #fcfff8;
-	text-indent:0;
-	font-size: 85%;
-	line-height: 1.8rem;
 }
 
 .sidenote_emph_r {
 	float: right;
 	clear: right;
-	width: 40%;
-	margin-right: -50%;
-	padding: 0.5em 10px;
-	position: relative;
-	transform: translateY(-30%);
 	border-left: 0.5em solid #ff8534;
 	background: #fffbf8;
-	text-indent: 0;
 }
 
 .sidenote_emph_l {
 	float: left;
 	clear: right;
-	width: 40%;
-	margin-left: -50%;
-	padding: 0.5em 10px;
-	position: relative;
-	transform: translateY(-30%);
 	border-right: 0.5em solid #ff8534;
 	background: #fffbf8;
-	text-indent:0;
 }
 
 code {
