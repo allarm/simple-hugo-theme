@@ -2,8 +2,8 @@
 
 <div class="post-meta">
     {{/* Display the summary if set */}}
-	{{ if (isset .Params "subtitle") }}
-	{{ .Params.subtitle}}
+	{{ if (isset .Params "summary") }}
+	{{ .Params.summary}}
 	{{ else }}
 	{{ end }}
     {{/* Display the date if set */}}
