@@ -10,18 +10,6 @@
 
 /* Default - phone and small tablet */
 
-#content {
-	line-height: 1.25; /* eq to 20px */
-
-	margin-bottom: 1em;
-	margin-top: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	max-width: 50em;
-}
-
 body {
 	font-size: 100%;
 	font-family: "Open Sans", serif;
@@ -31,10 +19,21 @@ body {
 	transition: all 1000ms cubic-bezier(0.76, 0, 1, 1);
 }
 
+#content {
+	line-height: 1.5; /* eq to 20px */
+	margin-bottom: 1em;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	max-width: 50em;
+}
+
 /* Desktop & Tablet */
 @media (min-width: 43.75em) {
 	#content {
-		font-size: 1em;
+		font-size: 1.2em;
 		line-height: 1.375;
 	}
 }
@@ -65,6 +64,7 @@ h1 {
 
 /* Tablet (lg) */
 @media (min-width: 43.75em) {
+
 	h1 {
 		font-size: 2.5em;
 		/* 2.5x body copy size = 40px */
@@ -74,13 +74,14 @@ h1 {
 
 /* Desktop and desktop large */
 @media (min-width: 56.25em) {
-	h1 {
-		font-size: 3em;
-		/* 3x body copy size = 48px */
-		line-height: 1.05;
+.
+h1 {
+	font-size: 3em;
+	/* 3x body copy size = 48px */
+	line-height: 1.05;
 /* keep to a multiple of the 20px line height 
     and something more appropriate for display headings */
-	}
+}
 }
 
 h2 {
@@ -143,17 +144,17 @@ h4 {
 }
 
 /* Header */
-div.header h1 {
+.header h1 {
 	padding-top: 0;
 	padding-bottom: 0.5em;
 	margin-bottom: 0.5em;
-	text-indent: 1.2em;
+	text-indent: 0.5em;
 
 	/*   font-size: 2em; */
 	border-bottom: 4px solid;
 }
 
-div.header h1:before {
+.header h1:before {
 	content: "";
 }
 
@@ -181,11 +182,21 @@ div.header h1:before {
 	padding-bottom: 0.5em;
 	margin-bottom: 2em;
 }
+
+/* Default (small screens) */
 .header-menu {
 	font-family: "Fira Code";
 	float: right;
-	font-size: 1.5em;
+	font-size: 1.4em;
 }
+
+@media (min-width: 43.75em) {
+	.header-menu {
+		font-size: 2em;
+	}
+}
+
+
 
 h1:before {
 	content: "# ";
@@ -240,6 +251,7 @@ img {
 }
 
 a {
+	/* font-size: 1.2em; */
 	text-decoration: none;
 	color: #111;
 	padding-bottom: 1px;
@@ -288,7 +300,6 @@ a.tags {
 	padding-left: 1px;
 	padding-right: 1px;
 	background-image: none;
-	font-size: smaller;
 }
 
 a.tags:hover {
@@ -412,6 +423,8 @@ blockquote span {
 }
 
 code {
+	/* font-size: 2em; */
+	text-indent: 0em;
 	background: #f8f9ff;
 	/*   font-size: 85%; */
 	border-radius: 3px;
@@ -429,7 +442,7 @@ pre code {
 }
 
 table {
-	font-size: 1.2em;
+	font-size: 1.44rem;
 }
 
 
@@ -453,9 +466,7 @@ sup {
 	/*   font-size: smaller; */
 }
 
-/* ul { */
-/* } */
-
 li {
-	/*   font-size: 1.2em; */
+	font-size: 1.2em;
+	line-height: 2em;
 }
