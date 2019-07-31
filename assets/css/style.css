@@ -74,14 +74,14 @@ h1 {
 
 /* Desktop and desktop large */
 @media (min-width: 56.25em) {
-.
-h1 {
-	font-size: 3em;
-	/* 3x body copy size = 48px */
-	line-height: 1.05;
+	.
+	h1 {
+		font-size: 3em;
+		/* 3x body copy size = 48px */
+		line-height: 1.05;
 /* keep to a multiple of the 20px line height 
     and something more appropriate for display headings */
-}
+	}
 }
 
 h2 {
@@ -469,4 +469,37 @@ sup {
 li {
 	font-size: 1.2em;
 	line-height: 2em;
+}
+
+
+/* Marker effects */
+
+.hl_red {
+	background: #FF355E;
+}
+
+.hl_red:before,
+.hl_red:after {
+	content: "::";
+	color: #ED0A3F;
+}
+
+.hl_green {
+	background: #87FF2A;
+}
+
+.hl_green:before,
+.hl_green:after {
+	content: "::";
+	color: #8FD400;
+}
+
+.hl_yellow {
+	background: #FFFF66;
+}
+
+.hl_yellow:before,
+.hl_yellow:after {
+	content: "::";
+	color: #FFDB00;
 }
