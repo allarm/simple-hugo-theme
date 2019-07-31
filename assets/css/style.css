@@ -6,13 +6,13 @@
 	color: #000;
 	background: #34afff; }
 
-/* html { */
-/* 	font-size: 16px; } */
+html {
+	font-size: 100%; }
 
 
 /* Default - phone and small tablet */ 
 body {
-	font-size: 100%;
+	/* font-size: 100%; */
 	font-family: 'Open Sans';
 	/* font-family: "adobe-text-pro", serif; */
     /* margin: 0 auto; */
@@ -40,9 +40,9 @@ body {
 }
 
 p {
-	font-size: 1.2rem;
-	line-height: 2.2rem;
-	text-indent: 2.2rem;
+	font-size: 1.2em;
+	line-height: 2.2em;
+	text-indent: 2.2em;
 	margin: 0;
 	margin-bottom: 1.5em;}
 
@@ -286,9 +286,9 @@ blockquote {
 	margin: 1.5em 10px;
 	padding: 0.5em 10px;
 	quotes: "\201C""\201D""\2018""\2019";
-	font-size: 1.2rem;
-	/* line-height: 2.2rem; */
-	/* text-indent: 2.2rem; */
+	font-size: 1.2em;
+	/* line-height: 2.2em; */
+	/* text-indent: 2.2em; */
 	margin: 0;
 	margin-bottom: 1.5em;
 
@@ -344,7 +344,7 @@ blockquote span {
 	transform: translateY(-30%);
 	text-indent: 0;
 	font-size: 85%;
-	line-height: 1.8rem;
+	line-height: 1.8em;
 }
 
 .sidenote_r {
@@ -416,5 +416,5 @@ sup {
 /* } */
 
 li {
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
