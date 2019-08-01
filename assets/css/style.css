@@ -10,6 +10,15 @@
 
 /* Default - phone and small tablet */
 
+body,
+html,
+#content {
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
 body {
 	font-size: 100%;
 	font-family: "Open Sans", serif;
@@ -25,9 +34,11 @@ body {
 	margin-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	max-width: 50em;
+	/* padding-left: 0.5em; */
+	/* padding-right: 0.5em; */
+	max-width: 52em;
+	position: relative;
+	height: fit-content;
 }
 
 /* Desktop & Tablet */
@@ -42,7 +53,9 @@ p {
 	font-size: 1.2em;
 	line-height: 2em;
 	text-indent: 2.2em;
-	/*   margin: 0; */
+	/* margin: 0; */
+	margin-left: 1em;
+	margin-right: 1em;
 	margin-bottom: 1em;
 }
 
@@ -52,6 +65,10 @@ h3,
 h4 {
 	font-family: "Fira Code";
 	line-height: 100px;
+	/* margin-left: 0.5em; */
+	text-indent: -1.8em;
+	padding-left: 2em;
+
 }
 
 /* Default - phone and small tablet */
@@ -192,29 +209,29 @@ h4 {
 
 @media (min-width: 43.75em) {
 	.header-menu {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 }
 
 
 
 h1:before {
-	content: "# ";
+	content: "#\a0";
 	color: #f0f0f0;
 }
 
 h2:before {
-	content: "## ";
+	content: "##\a0";
 	color: #f0f0f0;
 }
 
 h3:before {
-	content: "### ";
+	content: "###\a0";
 	color: #f0f0f0;
 }
 
 h4:before {
-	content: "#### ";
+	content: "####\a0";
 	color: #f0f0f0;
 }
 
@@ -229,12 +246,14 @@ ul.pagination > li {
 	display: inline-block;
 }
 
-div.footer {
+.footer {
 	padding-top: 1em;
 	margin-top: 16em;
 	/*   border-top: 3px solid; */
 	text-align: center;
 	/*   font-size: smaller; */
+	position: relative;
+	bottom: 0;
 }
 
 div.copyright {
@@ -328,6 +347,10 @@ time {
 	/* 	font-size: smaller; */
 }
 
+.post-meta {
+	margin: 1em;
+}
+
 blockquote {
 	background: #f9f9f9;
 	border-left: 0.5em solid #ccc;
@@ -379,6 +402,10 @@ blockquote span {
 	.sidenote_emph_l {
 		display: none;
 	}
+}
+
+em {
+	font-style: normal;
 }
 
 .sidenote_r,
@@ -502,4 +529,18 @@ li {
 .hl_yellow:after {
 	content: "::";
 	color: #FFDB00;
+}
+
+.hero img {
+
+	max-width: 100vw;
+	
+	position: relative;
+	width: 100vw;
+	left: calc(-50vw + 50%);
+	height: 100%;
+	background: blue;
+	
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
