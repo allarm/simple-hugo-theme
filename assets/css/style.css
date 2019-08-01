@@ -246,6 +246,10 @@ ul.pagination > li {
 	display: inline-block;
 }
 
+ul.pagination a {
+	background-image: none;
+}
+
 .footer {
 	padding-top: 1em;
 	margin-top: 16em;
